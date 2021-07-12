@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <phpunit bootstrap="vendor/autoload.php">
+    <filter>
+        <whitelist>
+            <directory>tests</directory>
+        </whitelist>
+    </filter>
     <testsuites>
         <testsuite name="Example">
             <file>./tests/test.php</file>
