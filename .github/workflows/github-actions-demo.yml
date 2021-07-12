@@ -16,7 +16,7 @@ jobs:
       - name: self-update
         run: composer self-update
       - name: composer install
-        run: composer install --no-interaction --prefer-source --dev
+        run: composer install --no-interaction --prefer-source
       - name: Run script
         run: vendor/bin/phpunit --coverage-clover coverage.xml
       - name: Upload reports to Codecov
