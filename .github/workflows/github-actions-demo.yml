@@ -23,15 +23,15 @@ jobs:
 
       # - name: Run PHPStan
       #   run: phpstan analyse src
-      - run: ls -ltrR
-      - run: phpunit --coverage-clover coverage.xml
+      # - run: ls -ltrR
+      # - run: phpunit --coverage-clover coverage.xml
 
-      # - name: self-update
-      #   run: composer self-update
-      # - name: composer install
-      #   run: composer install --no-interaction --prefer-source --dev
-      # - name: Run script
-      #   run: vendor/bin/phpunit --coverage-clover coverage.xml
+      - name: self-update
+        run: composer self-update
+      - name: composer install
+        run: composer install --no-interaction --prefer-source --dev
+      - name: Run script
+        run: vendor/bin/phpunit --coverage-clover coverage.xml
       # - run: php -i
       - name: Upload reports to Codecov
         run: bash <(curl -s https://codecov.io/bash)
