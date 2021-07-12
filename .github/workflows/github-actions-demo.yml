@@ -23,7 +23,7 @@ jobs:
 
       # - name: Run PHPStan
       #   run: phpstan analyse src
-
+      - run: ls -ltrR
       - run: phpunit --coverage-clover coverage.xml
 
       # - name: self-update
