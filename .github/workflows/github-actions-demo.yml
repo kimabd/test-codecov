@@ -11,8 +11,7 @@ jobs:
           fetch-depth: 2
       - uses: shivammathur/setup-php@v2
         with:
-          php_version: 7.4
-          version: 2
+          php_version: '7.4'
       - name: self-update
         run: composer self-update
       - name: composer install
