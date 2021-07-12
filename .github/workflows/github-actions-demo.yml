@@ -12,6 +12,7 @@ jobs:
       - uses: nanasess/setup-php@master
         with:
           php-version: '7.4'
+          coverage: xdebug
       - name: self-update
         run: composer self-update
       - name: composer install
