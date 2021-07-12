@@ -24,7 +24,7 @@ jobs:
       # - name: Run PHPStan
       #   run: phpstan analyse src
 
-      - run: vendor/bin/phpunit --coverage-clover coverage.xml
+      - run: phpunit --coverage-clover coverage.xml
 
       # - name: self-update
       #   run: composer self-update
