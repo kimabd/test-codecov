@@ -13,6 +13,7 @@ jobs:
         with:
           php-version: '7.4'
           coverage: xdebug
+          extensions: xdebug-beta
       - name: self-update
         run: composer self-update
       - name: composer install
